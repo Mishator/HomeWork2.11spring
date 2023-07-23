@@ -23,6 +23,7 @@ public class OrderController {
         return orderService.addAll(items);
     }
 
+    @GetMapping("/get")
     public List<Integer> getItems() {
         return orderService.getAll();
     }
